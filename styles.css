@@ -322,7 +322,7 @@ profile-photo .img{
 .education-content .row .open-source_contribution
 {
   color: #e5e5e5;
-  flex:0 0 50%;
+  flex:0 0 40%;
   max-width: 50%;
   margin-top: 30px;
 } 
@@ -340,8 +340,10 @@ profile-photo .img{
 }
 .education-content .row.timeline-box{
   flex:0 0 100%;
-  max-width: 100%;  
+  max-width: 100%; 
+  
 }
+
 .education-content .row .timeline{
   /* background-color:#e5e5e5; */
   padding: 30px 15px;
