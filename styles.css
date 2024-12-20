@@ -318,13 +318,21 @@ profile-photo .img{
   color: #fed700;
 }
 .education-content .row .education,
-.education-content .row .internship
+.education-content .row .internship,
+.education-content .row .open-source_contribution
 {
   color: #e5e5e5;
   flex:0 0 50%;
   max-width: 50%;
   margin-top: 30px;
 } 
+.education-content .row .open-source_contribution {
+  margin-right: 20px; /* Add right margin to create gap */
+}
+
+.education-content .row .internship {
+  margin-left: 20px; /* Add left margin to create gap */
+}
 .education-content  h3.title{
   font-size:24px;
   margin-bottom: 30px;
@@ -348,6 +356,12 @@ profile-photo .img{
   padding-bottom: 50px; 
 }
 .education-content .row  .internship .timeline-item{
+  position:relative;
+  padding-left: 37px;
+  padding-bottom: 30px; 
+}
+/* open-source */
+.education-content .row  .open-source_contribution .timeline-item{
   position:relative;
   padding-left: 37px;
   padding-bottom: 30px; 
@@ -383,11 +397,18 @@ profile-photo .img{
   font-size: 18px;
   margin-bottom: 8px;
 }
+/* open-source */
+.education-content .row .open-source_contribution .timeline-title  {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 8px;
+}
 .education-content .row .timeline-text{
   line-height: 25px;
   font-size: 16px;
   text-align: justify;
 }
+
 
 
 
@@ -447,6 +468,7 @@ profile-photo .img{
 .project:hover{
   border-color: #fed700;
 }
+
 
 
 
@@ -591,7 +613,8 @@ profile-photo .img{
   }
 
   .education-content .row .education,
-  .education-content .row .internship {
+  .education-content .row .internship ,
+  .education-content .row .open-source_contribution {
     flex-basis: 100%;
     max-width: 100%;
     margin-top: 30px;
