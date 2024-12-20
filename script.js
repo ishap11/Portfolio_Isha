@@ -114,6 +114,41 @@ $(document).ready(function() {
 checkbox.addEventListener("change", () => {
   document.body.classList.toggle("dark")
 })
+
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.forms["submitToGoogleSheet"];
+  const msg = document.getElementById("msg");
+
+  // Initialize EmailJS
+  emailjs.init("jQVbnXbjOjXjQYuW8"); // Replace YOUR_USER_ID with your EmailJS User ID
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const data = {
+      name: formData.get("NAME"),
+      email: formData.get("EMAIL"),
+      subject: formData.get("SUBJECT"),
+      message: formData.get("MESSAGE"),
+    };
+
+    emailjs
+      .send("service_kiax1zz", "template_0p8c4qp", data)
+      .then(() => {
+        msg.innerHTML = "Message sent successfully!";
+        setTimeout(() => {
+          msg.innerHTML = "";
+        }, 5000);
+        form.reset();
+      })
+      .catch((error) => {
+        console.error("Error!", error);
+        msg.innerHTML = "Failed to send the message. Try again later.";
+      });
+  });
+});
+
   
 
  
