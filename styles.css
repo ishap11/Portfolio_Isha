@@ -233,7 +233,12 @@ profile-photo .img{
   color:#fed700;
   transform: rotate(360deg);
 }
-
+.jobposition{
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+margin-bottom: 0.6rem;
+}
 
 
  /*---------------------------About---------------------------*/
@@ -470,6 +475,7 @@ profile-photo .img{
 .project:hover{
   border-color: #fed700;
 }
+
 
 
 
