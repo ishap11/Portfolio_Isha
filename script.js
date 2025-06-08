@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const msg = document.getElementById("msg");
 
   // Initialize EmailJS
-  emailjs.init("jQVbnXbjOjXjQYuW8"); // Replace YOUR_USER_ID with your EmailJS User ID
+  emailjs.init("9qNuao7cMZfzO9IO7"); // Replace YOUR_USER_ID with your EmailJS User ID
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
 
     emailjs
-      .send("service_kiax1zz", "template_0p8c4qp", data)
+      .send("service_s3noeun", "template_6j1vpn3", data)
       .then(() => {
         msg.innerHTML = "Message sent successfully!";
         setTimeout(() => {
